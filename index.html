@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/bsv@1.5.3/bsv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/bsv@1.5.3/bsv-mnemonic.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Wallet Info</h1>
+        <div class="box">
+            <div class="info">
+                <div id="mnemonics">
+
+                </div>
+                <div id="xprv">
+
+                </div>
+                <div id="xpub">
+
+                </div>
+                <div class="hd">
+                    <div id="hd-path">
+                        <label for="path">Enter path</label>
+                        <input type="text" name="path" id="path">
+                        <div id="prv">
+
+                        </div>
+                        <div id="pub">
+
+                        </div>
+                        <div id="address">
+
+                        </div>
+                        <div id="balance">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="qr">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
