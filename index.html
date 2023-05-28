@@ -13,40 +13,52 @@
     <script src="https://unpkg.com/bsv@1.5.3/bsv-mnemonic.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Wallet Info</h1>
-        <div class="box">
-            <div class="info">
-                <div id="mnemonics">
-
-                </div>
-                <div id="xprv">
-
-                </div>
-                <div id="xpub">
-
-                </div>
-                <div class="hd">
-                    <div id="hd-path">
-                        <label for="path">Enter path</label>
-                        <input type="text" name="path" id="path">
-                        <div id="prv">
-
+    <div class="glass">
+        <div class="container">
+            <div class="header">
+                <h1>Wallet Info</h1>
+            </div>
+            <div class="box">
+                <div class="info">
+                    <div class="mnemonics">
+                        <p>Your 12-word Mnemonics:</p>
+                        <p id="m-p"></p>
+                    </div>
+                    <div class="xprv">
+                        <p>HD Private Key:</p>
+                        <p id="xprv" class="break"></p>
+                    </div>
+                    <div class="xpub">
+                        <p>HD Public Key:</p>
+                        <p id="xpub" class="break"></p>
+                    </div>
+                    <div class="hd">
+                        <div id="hd-path">
+                            <label for="path">Enter path (default: m/):</label>
+                            <input type="text" name="path" id="path" placeholder="e.g. m/10/1'/0/1">
+                            <button id="btn">Get Path Info</button>
                         </div>
-                        <div id="pub">
-
+                        <div class="prv">
+                            <p>HD Private Key:</p>
+                            <p id="prv" class="break"></p>
                         </div>
-                        <div id="address">
-
+                        <div class="pub">
+                            <p>HD Public Key:</p>
+                            <p id="pub" class="break"></p>
                         </div>
-                        <div id="balance">
-
+                        <div class="address">
+                            <p>Address:</p>
+                            <p id="address" class="break"></p>
                         </div>
+                        <div class="balance">
+                            <p>Balance:</p>
+                            <p id="balance"></p>
+                        </div>          
                     </div>
                 </div>
-            </div>
-            <div id="qr">
+                <div id="qr">
 
+                </div>
             </div>
         </div>
     </div>

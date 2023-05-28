@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-size: 90%;
+    background-image: url(img/bg.webp);
+    background-size: 64px 64px;
+}
+
+.glass {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(158, 96, 217, 0.40);
+}
+
+.container {
+    margin: auto;
+    border: 4px solid black;
+    border-radius: 6%;
+    padding: 1rem;
+    background-color: #35393e;
+    color: whitesmoke;
+    width: 70vw;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.header {
+    background-image: linear-gradient(to top, orange, yellow);
+    background-size: cover;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+}
+
+.box {
+    display: flex;
+    gap: 1rem;
+}
+
+.info {
+    margin: 0.1rem;
+}
+
+.hd .balance, .info .hd {
+    border-bottom: none;
+}
+
+.info > div, .hd > div {
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    border-bottom: 1px solid white;
+}
+
+.hd #hd-path {
+    padding-bottom: 0.8rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+#qr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info, .hd {
+    display: flex;
+    flex-direction: column; 
+}
+
+#m-p {
+    overflow-wrap: break-word;
+    color: purple;
+    font-weight: 900;
+}
+
+.break {
+    word-break: break-all;
+    color: aqua;
+}
+
+#hd-path {
+    display: flex;
+}
+
+#path {
+    font-style: inherit;
+    flex-grow: 1;
+}
