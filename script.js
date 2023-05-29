@@ -47,7 +47,7 @@ path.addEventListener("input", () => {
 
 btn.addEventListener("click", () => {
   var path_value = path.value;
-  if (path_value.length > 0 && testPath(path_value)) {
+  if (testPath(path_value)) {
     var privateKeyStandard1 = hdPrivateKey.deriveChild(path_value);
 
     var privateKey = privateKeyStandard1.privateKey;
