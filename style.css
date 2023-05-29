@@ -32,8 +32,13 @@ body {
     padding: 1rem;
     background-color: #35393e;
     color: whitesmoke;
-    width: 70vw;
+    width: 90%;
     height: auto;
+}
+@media screen and (min-width:600px) {
+    .container{
+        width: 70vw;
+    }
 }
 
 h1 {
@@ -54,10 +59,12 @@ h1 {
 .box {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap-reverse;
+    margin-top: 1rem;
 }
 
-.info {
-    margin: 0.1rem;
+.info{
+   flex: 1;
 }
 
 .hd .balance, .info .hd {
@@ -71,15 +78,27 @@ h1 {
 }
 
 .hd #hd-path {
-    padding-bottom: 0.8rem;
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
-#qr {
+#hd-path #btn{
+    padding: 0.2em 0.5em;
+    width: 100px;
+
+}
+#qr{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+}
+#qr img{
+    width: 50%;
+}
+@media screen and (min-width:600px) {
+    #qr img{
+        width: 100%;
+    }
 }
 
 .info, .hd {
@@ -89,7 +108,7 @@ h1 {
 
 #m-p {
     overflow-wrap: break-word;
-    color: purple;
+    color: rgb(196, 119, 196);
     font-weight: 900;
 }
 
@@ -105,4 +124,5 @@ h1 {
 #path {
     font-style: inherit;
     flex-grow: 1;
+    padding: 0.2em;
 }
