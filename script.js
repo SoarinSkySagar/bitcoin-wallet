@@ -29,7 +29,7 @@ pub.innerHTML = publicKey;
 
 // Support only on bip-44 pattern
 function testPath(value) {
-  const regexBip44 = /^m(\/\d+\'?)*$/;
+  const regexBip44 = /^m(\/\d+\'?)+$/;
 
   if (regexBip44.test(value)) {
     errorText.textContent = "";
@@ -38,7 +38,7 @@ function testPath(value) {
     errorText.textContent = "invalid format.";
     return false;
   }
-}
+};
 
 path.addEventListener("input", () => {
   testPath(path.value);
