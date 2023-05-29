@@ -41,8 +41,7 @@ function testPath(value) {
 }
 
 path.addEventListener("input", () => {
-  const path_value = path.value;
-  testPath(path_value);
+  testPath(path.value);
 });
 
 btn.addEventListener("click", () => {
