@@ -74,8 +74,6 @@ btn.addEventListener("click", () => {
       let data = JSON.stringify(response.data);
       balance.innerHTML = data;
     });
-  } else {
-    alert("Please input a path!");
   }
 });
 
