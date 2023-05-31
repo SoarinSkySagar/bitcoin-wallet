@@ -29,7 +29,7 @@ pub.innerHTML = publicKey;
 
 // Support only on bip-44 pattern
 function testPath(value) {
-  const regexBip44 = /^m(\/\d+\'?)*$/;
+  const regexBip44 = /^m(\/\d+\'?)+$/;
 
   if (regexBip44.test(value)) {
     errorText.textContent = "";
@@ -38,11 +38,10 @@ function testPath(value) {
     errorText.textContent = "invalid format.";
     return false;
   }
-}
+};
 
 path.addEventListener("input", () => {
-  const path_value = path.value;
-  testPath(path_value);
+  testPath(path.value);
 });
 
 btn.addEventListener("click", () => {
@@ -74,8 +73,6 @@ btn.addEventListener("click", () => {
       let data = JSON.stringify(response.data);
       balance.innerHTML = data;
     });
-  } else {
-    alert("Please input a path!");
   }
 });
 
